@@ -59,7 +59,7 @@ handleChange=(e)=> {
 
   );
 
-let classes = classnames({"alertBorder": this.state.active,"form-control":true});
+let borderAlert = classnames({"alertBorder": this.state.active,"form-control":true});
     return(
 
       <div id="wrapper">
@@ -68,7 +68,7 @@ let classes = classnames({"alertBorder": this.state.active,"form-control":true})
       {list}
       </ul>
       <br />
-      <input type="text" placeholder="Task Name" className={classes} onChange={this.handleChange} value={this.state.text}/>
+      <input type="text" placeholder="Task Name" className={borderAlert} onChange={this.handleChange} value={this.state.text}/>
       <br /><br />
 
       <button className="buttonAlter btn btn-info" onClick={this.handleSubmit}> Add</button>
