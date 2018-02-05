@@ -29,7 +29,8 @@ class Todo extends React.Component {
 
 handleSubmit =(e) =>{
   e.preventDefault();
-  if (!this.state.text.length) {
+
+  if ((!this.state.text.length) || (this.state.text.trim()=='')) {
        this.setState({active: true});
       return;
     }
