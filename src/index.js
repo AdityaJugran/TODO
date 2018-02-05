@@ -28,10 +28,8 @@ handleSubmit =(e) =>{
       data: prevState.data.concat(newItem),
       text: ''
     }));
-    // console.log(this.state.data)
 }
 handleChange=(e)=> {
-  // console.log(e.target.value);
     this.setState({ text: e.target.value });
   }
   render(){
