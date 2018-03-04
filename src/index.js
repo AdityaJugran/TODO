@@ -16,7 +16,6 @@ class Todo extends React.Component {
 
     }
   }
-
   handleClick=(e)=> {
     const change = e.status === false?true:false;
     const badges = e.badge === ""?"complete":"";
@@ -27,14 +26,12 @@ class Todo extends React.Component {
       badge:badges
     });
   }
-
 editData=(e)=>{
 const cc = e.id
 const edit = e.id +'edit'
 document.getElementById(cc).style.display = "none";
 document.getElementById(edit).style.display = "block";
 }
-
 removeData=(e)=>{
  var newSate = this.state.data;
  for(var i=0;i< newSate.length;i++){
@@ -68,7 +65,6 @@ handleSubmit =(e) =>{
 }
 
 handleSubmitUpdate =(e) =>{
-
 const cc = e.id
 const edit = e.id +'edit'
 
@@ -91,8 +87,6 @@ const edit = e.id +'edit'
     document.getElementById(cc).style.display = "block";
     document.getElementById(edit).style.display = "none";
 }
-
-
 
 handleChange=(e)=> {
     this.setState({ text: e.target.value });
@@ -129,14 +123,10 @@ handleChange=(e)=> {
     </div>
 
     <div id={data.id+'edit'} style={{display:'none'}}>
-
       <input type="text"  className="form-control" style={{width:'70%',float:'left'}} defaultValue={data.text} onChange={this.handleUpdate} required/>
     <button type="submit" className="btn btn-warning" onClick={(e) => this.handleSubmitUpdate(data, e)}>Save</button>
-
     </div>
     </li>
-
-
   );
 
 let borderAlert = classnames({"alertBorder": this.state.active,"form-control":true});
