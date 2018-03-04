@@ -1,0 +1,50 @@
+#wrapper{
+  margin:20%;
+  margin-top: 5%
+}
+li{
+  float:left;
+  display: inline;
+  width:100%
+}
+.mainContainer{
+  width:100%;
+
+}
+.checkboxDiv{
+  width:3%;
+  float: left;
+  padding: 3px;
+
+}
+.titleDiv{
+  width:62%;
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+}
+.buttonDiv{
+  width:15%;
+  float:left;
+  padding: 3px;
+
+}
+
+ .buttonAlter {
+   width:17%;
+   font-size: 135%;
+    font-weight: 600;
+ }
+.alertBorder{
+  border:1px solid red;
+}
+.removeButton{
+background-color: #d9534f;
+border-radius: 3px;
+  padding: 7px;
+}
+.editButton{
+background-color: #4cae4c;
+border-radius: 3px;
+  padding: 7px;
+}
